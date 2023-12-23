@@ -53,7 +53,10 @@ namespace OOPS_Examples
             Console.Write("Your option? \n");
 
             // Use a switch statement to do all operations.
-            switch (Console.ReadLine())
+
+
+            var option = Console.ReadLine();
+            switch (option)
             {
                 case "a":
                     //Trace.WriteLine("Add New Student Information - Opeartion");
@@ -97,7 +100,7 @@ namespace OOPS_Examples
             students.Add(stu);
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("student info registered succesfully. \n");
+            Console.WriteLine("student info registered succesfully... \n");
 
             LoadOperations();
         }
